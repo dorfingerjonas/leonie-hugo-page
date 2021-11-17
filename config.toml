@@ -1,0 +1,83 @@
+################################# Default configuration ###################
+baseURL = "https://htblaleonie.github.io"
+title = "Leonie"
+theme = "htblaleonie-theme"
+themesDir = "./"
+
+################################# Outputs #################################
+# hugo outputs
+[outputs]
+home = ["HTML"]
+
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+#################################### Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+attributes = "media='screen'"
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.svg"
+logo_width = "150px"
+# Meta data
+description = "Leonie landing page powered by HTL Leonding"
+author = "Leonie Team"
+copyright = "Copyright &copy; 2021 [Leonie](). All Rights Reserved"
+
+######################### navigation #############################
+# main menu
+[[menu.main]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[menu.main]]
+name = "Über Leonie"
+URL = "#ueberleonie"
+weight = 2
+
+[[menu.main]]
+name = "Team"
+URL = "#team"
+weight = 3
+
+[[menu.main]]
+name = "Projekte"
+URL = "#projekte"
+weight = 4
+
+[[menu.main]]
+name = "Events"
+URL = "#events"
+weight = 5
+
+# footer menu
+[[menu.footer]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[menu.footer]]
+name = "Über Leonie"
+URL = "#ueberleonie"
+weight = 2
+
+[[menu.footer]]
+name = "Team"
+URL = "#team"
+weight = 3
+
+[[menu.footer]]
+name = "Projekte"
+URL = "#projekte"
+weight = 4
+
+[[menu.footer]]
+name = "Events"
+URL = "#events"
+weight = 5

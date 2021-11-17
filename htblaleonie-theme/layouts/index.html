@@ -1,0 +1,171 @@
+{{ define "main" }}
+
+{{ $data := index site.Data }}
+
+<!-- banner -->
+{{ if $data.homepage.banner.enable }}
+{{ with $data.homepage.banner }}
+<section class="slider {{if .bg_overlay}}overlay{{end}}" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>{{ .title | markdownify }}</h1>
+          <p>{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" target="_blank" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /banner -->
+
+{{ if $data.homepage.about.enable }}
+{{ with $data.homepage.about }}
+<!-- about -->
+<section class="about section" id="ueberleonie">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="{{ .image | relURL }}" alt="leonie-idle" class="img-response" draggable="false">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+{{ end }}
+{{ end }}
+
+
+{{ if $data.homepage.team.enable }}
+{{ with $data.homepage.team }}
+<!-- Team Start -->
+<section class="teamWrapper section" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+
+          <div class="team-members">
+            {{ range .teammembers }}
+            <div class="col-md-4 team-item" title="{{ .name }}" data-aos="{{ .animation }}">
+              <img src="{{ .avatar | relURL }}" alt="{{ .name }}">
+              <div class="team-hover">
+                <div class="team-content">
+                  <p>{{ .name }}</p>
+                  <p>{{ .role }}</p>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+
+          <img class="teampicture" src="{{ .teampicture }}" alt="Teampicture" draggable="false" title="Gruppenfoto">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if $data.homepage.paralax.enable }}
+{{ with $data.homepage.paralax }}
+<!-- Paralax -->
+<section class="paralax" style="background-image: url('{{ .bg_image | absURL}}')"></section>
+{{ end }}
+{{ end }}
+
+{{ if $data.homepage.projects.enable }}
+{{ with $data.homepage.projects }}
+<!-- Projects Start -->
+<section class="projects section" id="projekte">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+
+          <div id="projectsWrapper">
+            {{ range .projects}}
+            <div class="project">
+              <img class="projectIcon" src="{{ .icon | relURL }}" alt="{{ .name }}" title="{{ .name }}">
+              <div class="projectContent">
+                <div class="projectText">
+                  <p class="projectName">{{ .name }}</p>
+                  <p class="projectDescription">{{ .description }}</p>
+                </div>
+
+                <a class="projectButton" href="{{ .buttonURL | relURL}}">{{ .buttonLabel }}</a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<div id="bar"></div>
+
+{{ if $data.homepage.events.enable }}
+{{ with $data.homepage.events }}
+<!-- Events Start -->
+<section class="events section" id="events">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+
+          <div id="eventswrapper">
+            {{ range .events }}
+            <div class="row">
+              <div class="eventRowWrapper">
+                <div class="event" data-aos="{{ .animation }}">
+                  <p class="eventName">{{ .name }}</p>
+                  <p class="eventDescription">{{ .description }}</p>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,109 @@
+############################### Banner ##############################
+banner:
+  enable : true
+  bg_image : "images/working-team.jpg"
+  bg_overlay : true
+  title : "Leonie"
+  content : 'eine künstlich "intelligente" Sprachassistin und Avatar der HTL Leonding'
+  button:
+    enable : true
+    label : "Entdecke Leonie"
+    link : "https://leonie.htl-leonding.ac.at/"
+
+
+############################# About #################################
+about:
+  enable : true
+  title : "Über Leonie"
+  image : "images/leonie-idle.gif"
+  description : "Das Projekt Leonie wird seit über 5 Jahren entwickelt"
+  content : 'Es handelt sich um einen künstlich "intelligenten" Sprachassistenten der Besucherinnen und Besucher eine Möglichkeit zur Informationsauskunft bietet.
+            Der Aufgabenbereich ist sehr vielseitig. Sei es nur das Beantworten von Fragen, zum Beispiel am Tag der offenen Tür oder am Schnuppertag. Dabei liegt der Schwerpunkt auf allgemeinen Fragen über die Schule und die Ausbildungsmöglichkeiten an der HTL Leonding.
+            Was Leonie von anderen bekannten Sprachassistenten wie Siri oder Google Home unterscheidet ist, dass Leonie nicht nur eine Stimme, sondern auch ein Gesicht hat. Somit gibt es ganz neue Möglichkeiten, um mit Leonie zu interagieren. Die visuelle Darstellung erfolgt durch ein ausgeklügeltes Projektionskonzept.
+            Das 3D Modell wird auf eine speziell beschichtete Glaspyramide projiziert, womit man Leonie nicht nur frontal, sondern auch von der Seite sehen kann - ein richtiges Hologramm.'
+
+
+######################### Paralax ###############################
+team:
+  enable: true
+  title: "Team"
+  description: "Die Masterminds hinter Leonie"
+  teampicture: "images/teampicture-2.jpg"
+  teammembers:
+    - name: "Jonas Dorfinger"
+      role: "Projektleiter, Softwareentwickler"
+      avatar: "images/team/dorfinger.jpg"
+      animation : "zoom-in"
+
+    - name: "Sebastian Scholl"
+      role: "Softwareentwickler"
+      avatar: "images/team/scholl.jpg"
+      animation : "zoom-in"
+
+    - name: "Lukas Starka"
+      role: "Softwareentwickler"
+      avatar: "images/team/starka.jpg"
+      animation : "zoom-in"
+
+    - name: "Nina Weissengruber"
+      role: "Softwareentwicklerin"
+      avatar: "images/team/weissengruber.jpg"
+      animation : "zoom-in"
+
+    - name: "Jonas Wiesinger"
+      role: "Softwareentwickler"
+      avatar: "images/team/wiesinger.jpg"
+      animation : "zoom-in"
+
+
+######################### Paralax ###############################
+paralax:
+  enable : true
+  bg_image : "images/working-team2.jpg"
+
+
+######################### Projects ###############################
+projects:
+  enable: true
+  title: "Projekte"  
+  description: "Leonie wird auch in anderen Projekten verwendet"
+  projects:
+    - name: "Leonie-Discord"
+      icon: "images/projects/discord.png"
+      buttonLabel: "Leonie einladen"
+      buttonURL: "https://discordapp.com/oauth2/authorize?&client_id=770211066452901928&scope=bot&permissions=18432"
+      description: "Da wir aufgrund der Corona-Situation nicht mehr in die Schule gehen und nicht mehr mit Leonie direkt kommunizieren konnten, wurden wir kreativ und haben eine Möglichkeit erschaffen, mit Leonie über Discord zu chatten.
+                    Discord ist eine Kommunikationsplattform welche von vielen Schülern privat oder auch teilweise für den Unterricht verwendet wird.
+                    Das Gespräch findet in diesem Fall nicht über verbale Kommunikation und Spracherkennung, sondern über einen textbasierten Chat statt."
+
+    - name: "Leonie-Chatbot"
+      icon: "images/projects/chatbot.png"
+      buttonLabel: "HTL Website"
+      buttonURL: "https://htl-leonding.at/"
+      description: "Leonie ist auch auf der Schulhomepage zu finden, um die Orientierung oder Suche nach den gewünschten Informationen zu erleichtern.
+                    Der Vorteil eines solchen Chat-Systems ist, dass man dadurch 24/7 eine sehr gute Beratung bzw. Unterstützung anbieten kann.
+                    Leonie-Chatbot ist ein gutes Beispiel, wie vielseitig Leonie eingesetzt wird, und aus wie vielen kleinen Projekten sie besteht.
+                    Dieses Projekt befindet sich noch in der Entwicklung und wird voraussichtlich in den nächsten Monaten fertiggestellt."
+
+
+######################### Events ###############################
+events:
+  enable: true
+  title: "Events"
+  description: "öffentliche Auftritte von Leonie"
+  events:
+    - name: "Zukunftssymposium"
+      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti quaerat blanditiis quis a vitae dolorem sapiente, facilis qui eos consequatur repellendus. Architecto aspernatur cumque quasi necessitatibus nesciunt omnis laborum!"
+      animation: "fade-right"
+
+    - name: "Schlossmuseum"
+      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti quaerat blanditiis quis a vitae dolorem sapiente, facilis qui eos consequatur repellendus. Architecto aspernatur cumque quasi necessitatibus nesciunt omnis laborum!"
+      animation: "fade-left"
+
+    - name: "Neujahrsempfang"
+      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti quaerat blanditiis quis a vitae dolorem sapiente, facilis qui eos consequatur repellendus. Architecto aspernatur cumque quasi necessitatibus nesciunt omnis laborum!"
+      animation: "fade-right"
+
+    - name: "Ball der Leondinger"
+      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti quaerat blanditiis quis a vitae dolorem sapiente, facilis qui eos consequatur repellendus. Architecto aspernatur cumque quasi necessitatibus nesciunt omnis laborum!"
+      animation: "fade-left"
