@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://htblaleonie.github.io"
+baseURL = "https://dorfingerjonas.at/leonie-hugo-page/"
 title = "Leonie"
 theme = "htblaleonie-theme"
 themesDir = "./"
